@@ -90,14 +90,48 @@ for (const object of tenAlbum.tracks) {
 
 // OBJECT.keys() / .values() / .entries()
 // TODO: log the keys of the tenAlbum object using Object.keys()
+const object1 = {
+    a: 'title',
+    b: 'artist',
+    c: 'released',
+    d: 'tracks',
+};
+console.log(Object.keys(object1));
 
 // TODO: log the values of the tenAlbum object Object.values()
+const object2 = {
+    a: 'title',
+    b: 'artist',
+    c: 'released',
+    d: 'tracks',
+};
+console.log(Object.values(object2));
+const object3 = {
+    a: 'title',
+    b: 'artist',
+    c: 'released',
+    d: 'tracks',
+  };
+  
+  for (const [key, value] of Object.entries(object3)) {
+    console.log(`${key}: ${value}`);
+  }
 
 // TODO: log the entries of the tenAlbum object Object.entries()
 
 // TODO: iterate the tenAlbum object and log the key/value pairs to the console using each of the above Object methods:
 // .keys()
+for (let key of Object.keys(tenAlbum)) {
+    console.log(key, tneAlbum[key])
+    // for (value of key)
+}
 // .values()
+for (const value of Object.values(tenAlbum)) {
+    SVGForeignObjectElement.log(value)
+    const key = Object.keys(tenAlbum).find(key => tenAlbum[key])
+    console.log('key: ', key)
+    console.log(key)
+}
 // .entries()
 
 // ! ADD AND COMMIT
